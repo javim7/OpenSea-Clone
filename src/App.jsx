@@ -1,11 +1,15 @@
+/* eslint-disable import/extensions */
 import React from 'react'
 import './App.css'
-// eslint-disable-next-line import/extensions
 import Nav from './Components/Nav/Nav.jsx'
+import Banner from './Components/Banner/Banner.jsx'
 
 function App() {
   return (
-    <Nav />
+    <div className="AppContainer">
+      <Nav />
+      <Banner />
+    </div>
   )
 }
 export default App

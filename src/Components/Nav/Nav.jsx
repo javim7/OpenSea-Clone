@@ -15,22 +15,22 @@ function Nav() {
           <Search className="searchIcon" />
           <input className="searchInput" type="text" placeholder="Search items, collections, and accounts" />
         </div>
-        <ul className="NavBarRight">
-          <div className="RightLeft">
+        <div className="NavBarRight">
+          <ul className="RightLeft">
             <li className="LiLeft">Explore</li>
             <li className="LiLeft">Stats</li>
             <li className="LiLeft">Resources</li>
             <li className="LiLeft">Create</li>
-          </div>
-          <div className="RightRight">
+          </ul>
+          <ul className="RightRight">
             <li>
-              <AccountCircleOutlinedIcon className="LiRight" style={{ color: 'gray', fontSize: '32' }} />
+              <AccountCircleOutlinedIcon className="LiRight" style={{ fontSize: '32' }} />
             </li>
             <li>
-              <AccountBalanceWalletOutlinedIcon className="LiRight" style={{ color: 'gray', fontSize: '32' }} />
+              <AccountBalanceWalletOutlinedIcon className="LiRight" style={{ fontSize: '32' }} />
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   )
