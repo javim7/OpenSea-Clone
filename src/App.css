@@ -1,19 +1,12 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', 'sans-serif';
+    font-family: 'Poppins', sans-serif;
+    height: 200vh;
+    width: 100vh;
 }
 
 body {
-    background-color: #eee;
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.container {
-    border: 1px solid #fff;
-    color: black;
-    padding: 1rem;
-    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 56, 64);
+    width: 100%;
 }

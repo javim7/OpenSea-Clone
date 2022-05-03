@@ -1,9 +1,11 @@
 import React from 'react'
 import './App.css'
+// eslint-disable-next-line import/extensions
+import Nav from './Components/Nav/Nav.jsx'
 
 function App() {
   return (
-    <h1>Hola mundos!</h1>
+    <Nav />
   )
 }
 export default App
