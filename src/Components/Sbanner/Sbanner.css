@@ -1,0 +1,100 @@
+.SbannerContainer{
+  position: absolute;
+  height: 130px;
+  top: 658px;
+  width: 100%;
+  display: flex;
+  flex-direction: colum;
+  -webkit-box-align: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .SbannerContainer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.SbannerImg{
+  width: 100%;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130px;
+  margin-left: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .SbannerImg {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .SbannerImg {
+    max-width: min(1220px, 100% - 96px);
+  }
+}
+
+.exploreSol{
+    color: rgb(32, 129, 226);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenedor{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.txtCont, .btnCont{
+  display: block;
+}
+
+@media not all and (max-width: 767.98px) {
+  .contVacio {
+    display: none !important;
+  }
+}
+
+.contVacio, .contLleno{
+  margin: 0;
+  padding: 0;
+}
+
+.txtSol{
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(53, 56, 64);
+  margin: 0px;
+  line-height: 110%;
+}
+
+.btnSol{
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: rgb(32, 129, 226);
+  border: 1px solid rgb(32, 129, 226);
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  appearance: button;
+  cursor: pointer;
+}
+
+.btnSol:hover {
+  background-color: rgb(29, 108, 187);
+}

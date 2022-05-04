@@ -34,11 +34,11 @@ module.exports = {
             ]
             },
              {
-           test: /\.(png|jpe?g|gif)$/i,
+            test: /\.(jpe?g|png|gif|svg)$/i,
             use: [
-                'file-loader'
+                'file-loader',
             ]
-        },
+            },
         ]
     }
 }

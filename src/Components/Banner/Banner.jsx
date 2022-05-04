@@ -1,6 +1,7 @@
 import './Banner.css'
 import { PlayCircleFilled } from '@mui/icons-material'
 import BannerImg from './bannerBackground.jpeg'
+import featImg from './featuredImg.jpeg'
 
 function Banner() {
   return (
@@ -31,7 +32,25 @@ function Banner() {
           </div>
         </div>
         <div className="BannerImg2">
-
+          <article className="articuloCont">
+            <a className="imgLink" href="https://opensea.io/collection/otherdeed">
+              <img alt="featured" className="featImg" src={BannerImg} />
+              <footer className="footer">
+                <div className="featuredPic">
+                  <img alt="featured" className="featImg2" src={featImg} />
+                </div>
+                <div className="featTextCont">
+                  <span className="span1Cont">
+                    <span className="span1">Otherdeed for Otherside</span>
+                  </span>
+                  <span className="span2Cont">
+                    <span style={{ fontWeight: '400', color: '#04111d', fontSize: '14px' }}>by</span>
+                    <span style={{ fontWeight: '500', marginLeft: '4px', color: '#04111d' }}>OthersideMeta</span>
+                  </span>
+                </div>
+              </footer>
+            </a>
+          </article>
         </div>
       </div>
     </div>
