@@ -8,6 +8,7 @@ import Drops from './Components/Drops/Drops.jsx'
 import Collections from './Components/Collections/Collections.jsx'
 import Trending from './Components/Trending/Trending.jsx'
 import Create from './Components/Create/Create.jsx'
+import Resources from './Components/Resources/Resources.jsx'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Collections />
       <Trending />
       <Create />
+      <Resources />
     </div>
   )
 }

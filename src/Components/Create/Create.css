@@ -49,12 +49,9 @@
   justify-content: space-around;
   margin: 40px 0px 20px;
   width: 100%;
-  --totalWidth: 440px;
   flex-direction: row;
   -webkit-box-align: center;
   align-items: center;
-  width: 100%;
-  max-width: var(--totalWidth);
   text-align: center;
 }
 
@@ -104,8 +101,6 @@
   color: rgb(4, 17, 29);
   margin-bottom: 4px;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   text-align: center;
@@ -117,8 +112,6 @@
   color: rgb(112, 122, 131);
   margin-top: 4px;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
