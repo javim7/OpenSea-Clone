@@ -1,0 +1,258 @@
+.TrendingContainer{
+  position: absolute;
+  top: 2432px;
+  left: 0;
+  width: 100%;
+  height: 570.39px;
+  display:flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.h2Cont{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.trendH2{
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(4, 17, 29);
+  margin: 56px 8px;
+  text-align: center;
+}
+
+.divDropDown {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.dropOptions {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(32, 129, 226);
+  margin: 0px;
+  text-align: center;
+  white-space: nowrap;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.expandIcon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  color: rgb(32, 129, 226);
+  font-feature-settings: "liga" !important;
+  font-size: 24px !important;
+}
+
+@media (min-width: 1200px) {
+  .carCont {
+    max-width: calc(3 * var(--totalWidth));
+  }
+}
+
+.carCont{
+  display: flex;
+  --totalWidth: 440px;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 432px;
+}
+
+.carCont2{
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .carCont3 {
+    margin: 0px 40px;
+  }
+}
+
+.carCont3{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: auto;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+@media (min-width: 1200px) {
+  .lSlide {
+    top: 63%;
+  }
+}
+
+.lSlide {
+  position: absolute;
+  left: -17px;
+  z-index: 1;
+  top: 185px;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(229, 232, 235);
+  color: rgb(112, 122, 131);
+  appearance: button;
+  cursor: pointer;
+}
+
+.lIconCont {
+  display: flex;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.lIcon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1200px) {
+  .rSlide {
+    top: 63%;
+  }
+}
+
+.rSlide {
+  position: absolute;
+  right: -17px;
+  z-index: 1;
+  top: 185px;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(229, 232, 235);
+  color: rgb(112, 122, 131);
+  appearance: button;
+  cursor: pointer;
+}
+
+.rIconCont {
+  display: flex;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.rIcon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rSlide:hover,
+.lSlide:hover {
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.car{
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  position: relative;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.carSty{
+  width: 11178px;
+  opacity: 1;
+  transform: translate3d(-1242px, 0px, 0px);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listBtns{
+  position: absolute;
+  bottom: -32px;
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: auto;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  --totalWidth: 440px;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--totalWidth);
+}

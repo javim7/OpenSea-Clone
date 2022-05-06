@@ -1,0 +1,164 @@
+.CreateContainer{
+  position: absolute;
+  top: 3162px;
+  left: 0;
+  width: 100%;
+  height: 474.2px;
+  display:flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(251, 253, 255);
+}
+
+@media (min-width: 1200px) {
+  .CreateCont2 {
+    max-width: calc(3 * var(--totalWidth));
+  }
+}
+
+.CreateCont2{
+  display: flex;
+  text-align: center;
+  --totalWidth: 440px;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 394.2px;
+}
+
+.createH2{
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(4, 17, 29);
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.createGrid{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0px 20px;
+  width: 100%;
+  --totalWidth: 440px;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--totalWidth);
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .sectCont {
+    max-width: 260px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectCont {
+    padding: 0px;
+  }
+}
+
+.sectCont{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.topIconCont{
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  --totalWidth: 440px;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--totalWidth);
+  text-align: center;
+}
+
+.createTitle{
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(4, 17, 29);
+  margin-bottom: 4px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+.parCont{
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(112, 122, 131);
+  margin-top: 4px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.parLink{
+  font-weight: 600;
+  color: rgb(32, 129, 226);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.createimgCont{
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+}
+
+.bckgSvg{
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.walletSvg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}

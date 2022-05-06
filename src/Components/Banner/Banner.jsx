@@ -1,13 +1,15 @@
 import './Banner.css'
 import { PlayCircleFilled } from '@mui/icons-material'
-import BannerImg from './bannerBackground.jpeg'
-import featImg from './featuredImg.jpeg'
+// import BannerImg from './bannerBackground.jpeg'
+// import featImg from './featuredImg.jpeg'
+import Beanz from './beanz.png'
+import BeanzAvatar from './beanzAvatar.png'
 
 function Banner() {
   return (
     <div className="BannerContainer">
       <div className="BannerBackground">
-        <div className="BannerImg" style={{ backgroundImage: `url(${BannerImg})` }}>
+        <div className="BannerImg" style={{ backgroundImage: `url(${Beanz})` }}>
           <div className="BannerFade" />
         </div>
       </div>
@@ -34,18 +36,18 @@ function Banner() {
         <div className="BannerImg2">
           <article className="articuloCont">
             <a className="imgLink" href="https://opensea.io/collection/otherdeed">
-              <img alt="featured" className="featImg" src={BannerImg} />
+              <img alt="featured" className="featImg" src={Beanz} />
               <footer className="footer">
                 <div className="featuredPic">
-                  <img alt="featured" className="featImg2" src={featImg} />
+                  <img alt="featured" className="featImg2" src={BeanzAvatar} />
                 </div>
                 <div className="featTextCont">
                   <span className="span1Cont">
-                    <span className="span1">Otherdeed for Otherside</span>
+                    <span className="span1">BEANZ Official</span>
                   </span>
                   <span className="span2Cont">
                     <span style={{ fontWeight: '400', color: '#04111d', fontSize: '14px' }}>by</span>
-                    <span style={{ fontWeight: '500', marginLeft: '4px', color: '#04111d' }}>OthersideMeta</span>
+                    <span style={{ fontWeight: '500', marginLeft: '4px', color: '#04111d' }}>Azuki</span>
                   </span>
                 </div>
               </footer>
