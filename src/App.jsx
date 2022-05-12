@@ -9,6 +9,7 @@ import Collections from './Components/Collections/Collections.jsx'
 import Trending from './Components/Trending/Trending.jsx'
 import Create from './Components/Create/Create.jsx'
 import Resources from './Components/Resources/Resources.jsx'
+import Browse from './Components/Browse/Browse.jsx'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Trending />
       <Create />
       <Resources />
+      <Browse />
     </div>
   )
 }

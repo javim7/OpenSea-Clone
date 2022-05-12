@@ -115,3 +115,259 @@
   background-color: rgb(29, 108, 187);
   box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
 }
+
+.columnsCont{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.columnasSect{
+  display: flex;
+}
+
+.columnaSect{
+  display: flex;
+  flex-direction: column;
+  margin-right: 44px;
+  min-width: 30%;
+}
+
+.elementLink{
+  display: flex;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent transparent rgb(229, 232, 235);
+  width: 100%;
+  font-weight: 600;
+  padding: 16px;
+  color: rgb(53, 56, 64);
+  text-align: left;
+  text-decoration: none;
+  height: 88px;
+}
+
+.elementLink:hover {
+  border-radius: 10px;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.rateContCol{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.spanContCol{
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(4, 17, 29);
+  text-align: right;
+}
+
+.rateCol{
+  width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.imgContCol{
+  position: relative;
+}
+
+.imgCont2Col{
+  display: flex;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 1px solid rgb(229, 232, 235);
+  border-radius: 50%;
+}
+
+.imgCont3Col{
+  height: 50px;
+  width: 50px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+.imgCol{
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 400ms ease 0s;
+  width: 100%;
+}
+
+.infoContCol{
+  display: flex;
+  align-self: stretch;
+  flex: 1 1 auto;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-right: 16px;
+  order: 3;
+  overflow: hidden;
+  font-size: 16px;
+  align-items: flex-start;
+}
+
+.titleContCol{
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(4, 17, 29);
+  width: 100%;
+}
+
+.titleCol{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(4, 17, 29);
+}
+
+.floorCont{
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(112, 122, 131);
+}
+
+.floorCont2{
+  display: flex;
+  -webkit-box-align: center;
+    align-items: center;
+}
+
+.floorPriceTitle{
+  margin-right: 4px;
+    margin-top: 2px;
+}
+
+.floorPrice2{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.ethCont{
+  display: flex;
+  margin-right: 4px;
+  height: 22px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.ehtBtn{
+  display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 100%;
+    font-family: inherit;
+    border: 0px;
+    padding: 0px;
+    background: inherit;
+  appearance: button;
+    cursor: pointer;
+  color: inherit;
+    font: inherit;
+    margin: 0px;
+}
+
+.ethBtnCont{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+      justify-content: center;
+    width: 14px;
+      height: 14px;
+}
+
+.ethLogo{
+  width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.fPriceCont{
+  font-weight: 600;
+    font-size: 14px;
+    color: rgb(138, 147, 155);
+    margin: 0px;
+}
+
+.fPriceTxt{
+      width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+}
+
+.numberContCol{
+  align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 40%;
+    order: 4;
+    overflow: hidden;
+    text-align: right;
+}
+
+.numberContCol2{
+  display: flex;
+  align-items: flex-end;
+    flex-direction: column;
+  -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.pctCont{
+  font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+#pctMinus{
+  color: rgb(235, 87, 87);
+}
+
+#pctPlus{
+  color: rgb(52, 199, 123);
+}
+
+#pctSame{
+  color: rgb(53, 56, 64);
+}
+
+.pctTxt{
+  width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.priceCont{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
