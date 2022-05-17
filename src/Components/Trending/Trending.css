@@ -256,3 +256,177 @@
   width: 100%;
   max-width: var(--totalWidth);
 }
+
+.fullCCont{
+  outline: none;
+  width: 414px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s ease 0s, opacity 500ms ease 0s;
+  display: block;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+@media (min-width: 768px) {
+  .fullCCont2 {
+    margin-bottom: 10px;
+  }
+}
+
+.fullCCont2{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+.fullCLink{
+  display: inline-block;
+    border: 1px solid rgb(229, 232, 235);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+  position: relative;
+    padding-bottom: 22px;
+  color: rgb(32, 129, 226);
+    text-decoration: none
+}
+
+.fullCLink:hover {
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.upperCCont{
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid rgb(229, 232, 235);
+  background-color: rgb(229, 232, 235);
+  -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cImgT{
+  object-fit: cover;
+  height: 100%;
+  transition: opacity 400ms ease 0s;
+  width: 100%;
+  display: block;
+}
+
+.lowerCCont{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: -36px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.cLogoCont{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(251, 253, 255);
+    border: 3px solid rgb(251, 253, 255);
+    box-shadow: rgb(14 14 14 / 60%) 0px 0px 2px 0px;
+  -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.cLogoT{
+  display: block;
+  height: 100%;
+    object-fit: cover;
+    transition: opacity 400ms ease 0s;
+    width: 100%;
+}
+
+.titleCardContT{
+  display: flex;
+  margin-top: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.titleCT{
+  color: rgb(4, 17, 29);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    max-width: 200px;
+    margin-top: 2px;
+}
+
+.byCContT{
+  display: flex;
+  font-size: 14px;
+    font-weight: 500;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.byTxtT{
+  font-weight: 500;
+    font-size: 14px;
+    color: rgb(112, 122, 131);
+  margin: 0px 4px 0px 0px;
+}
+
+.authorCCont{
+  display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 24px;
+    width: 100%;
+}
+
+.authotCLink{
+  text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  color: rgb(32, 129, 226);
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+.descripctionContC{
+      max-width: 80%;
+        margin-top: 20px;
+        height: 66px;
+        overflow: hidden;
+        text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    font-weight: 400;
+      font-size: 16px;
+      color: rgb(112, 122, 131);
+}
+
+.descriptcionCT{
+  
+}
