@@ -415,8 +415,8 @@
 
 .descripctionContC{
       max-width: 80%;
-        margin-top: 20px;
-        height: 66px;
+        margin-top: 14px;
+        height: 72px;
         overflow: hidden;
         text-align: center;
         display: -webkit-box;
@@ -427,6 +427,15 @@
       color: rgb(112, 122, 131);
 }
 
-.descriptcionCT{
-  
+@media (min-width: 815px) {
+  .meetBtnCont {
+    margin-bottom: 80px;
+    margin-top: 0px;
+  }
+}
+
+.meetBtnCont{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
 }

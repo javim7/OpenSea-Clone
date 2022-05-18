@@ -7,16 +7,36 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import unigrids from './unigrids.png'
 import skullbot from './skullbot.jpg'
 import skullbotL from './skullbotL.png'
+import ninja from './ninja.jpg'
+import karafuru from './karafuru.jpg'
+import karafuruA from './karafurusgif.gif'
+import invasion from './invasion.gif'
+import henulu from './henulu.png'
+import milady from './milady.jpg'
+import bored from './bored.png'
+import galactic from './galactic.jpg'
+import galacticA from './galacticA.jpg'
+import mont from './mont.jpg'
+import monta from './monta.gif'
+import boys from './boys.png'
+import boysa from './boysa.gif'
+import punk from './punk.png'
+import punka from './punka.jpg'
 
 function Trending() {
   const cards = [
-    { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
-    { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
+    { title: 'HENI: Damien Hisrt -The...', by: 'HENI', description: 'The Empresses by Damien Hirst is a series of five glorious prints depicting carefully composed image...', src: henulu, logo: henulu },
+    { title: 'Milady Maker', by: 'Milady-Sonora', description: 'Milady Maker is a collection of 10,000 generative pfpNFTs in a neochibi aesthetic inspired by stree...', src: milady, logo: milady },
     { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
     { title: 'Skullbot Biker Gang', by: 'Skullbots', description: 'Skullbot Biker Gang is a Couterculture Movement. A Rebellious Organization of 3,666...', src: skullbot, logo: skullbotL },
-    { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
-    { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
-    { title: 'Unigrids by Zeblocks', by: 'ArtBlocks_Admin', description: 'Unigrids by Zeblocks - Art Blocks Curated', src: unigrids, logo: unigrids },
+    { title: 'Stoned Ninjas', by: 'StonedNinjasSolana', description: '4200 Stoned Ninjas are conquering the Cannabis Industry with their utility token $KUNAI planning to...', src: ninja, logo: ninja },
+    { title: 'Karafuru Gachapon', by: 'KarafuruDeployer', description: 'The Karafuru Gachapon is your acces ticket to 3D Kafarufu Collection. 1 Karafuru Gachapon = 1...', src: karafuru, logo: karafuruA },
+    { title: 'The Invasion', by: 'TheInvasionSolana', description: 'Get ready for the invasion of the world! Preparations for destroying the boring world order has begu...', src: invasion, logo: invasion },
+    { title: 'Bored Ape solana Club', by: 'Bored-Ape-Solana-Club', description: 'The intention was always set to be a community-driven Solana NFT project full of 6001 Bored Apes han...', src: bored, logo: bored },
+    { title: 'Aetherian Deed', by: '223FCC', description: 'Explore the Aetherian Deed collection', src: galactic, logo: galacticA },
+    { title: 'Duck Punkz Universe', by: 'DuckPunkzUniversola...', description: 'An exclusive collection of 4500 uniquely generated pixel Duck Punkz, waddling their way through the ...', src: mont, logo: monta },
+    { title: 'BBRC - IVY BOYS', by: 'BBRC_Studios', description: 'IVY BOYS by Aaron Chang is the genesis project of BBRC Studios and the first of many creator collabora...', src: boys, logo: boysa },
+    { title: 'SolPunks', by: 'SolPunks_Official', description: 'Homage to the iconic punks. The first NFT collection to finish minting on Solana https://twitter.com...', src: punk, logo: punka },
   ]
 
   return (

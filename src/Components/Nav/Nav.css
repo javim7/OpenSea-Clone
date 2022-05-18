@@ -49,55 +49,77 @@
 		cursor: pointer;
 }
 
-.NavInput{
+.NavInputCont{
     display: flex;
-    position: relative; 
-    left: 8.65%;
-    /* position: fixed;
-    left: 476px; */
-    top: 14px;
-    width: 768px;
-    height: 45px;
-    cursor: text;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    border: 1px solid rgb(229, 232, 235);
-    padding: 12px;
+    width: 100%;
+    position: relative;
+    left: 444px;
+}
+
+.NavInputCont2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.NavInputCont3{
     max-width: 768px;
     line-height: 26px;
     padding: 8px;
-    align-content: space-between;
+    cursor: text;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    width: 100%;
+}
+
+.searchIconCont{
+    -webkit-box-pack: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     margin-right: 8px;
 }
 
 @media screen and (min-width: 600px) {
-	.NavInput {
+	.NavInputCont3 {
 		height: 45px;
 	}
 }
 
 .searchIcon{
-    position: relative;
-    color: gray;
-    top: 1px;
-    size: 240px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizelegibility;
+    color: rgb(112, 122, 131);
+    font-feature-settings: "liga" !important;
+    font-size: 24px !important;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 600px) {.searchInput {
+font-size: inherit;
+line-height: inherit;
+min-height: inherit;
+}}
+
 .searchInput{
-    position: relative;
-    left: 8px;
-    top: -7px;
     background-color: transparent;
     border: none;
     outline: none;
     width: 100%;
-    height: 40px;
-    color: rgb(132, 132, 132);
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    line-height: 26px;
-    font-weight: 400;
-    letter-spacing: normal;
+    cursor: text;
 }
 
 .searchInput::-webkit-input-placeholder {
@@ -110,7 +132,7 @@
     letter-spacing: normal;
 }
 
-.navInput:focus-within{
+.NavInputCont3:focus-within{
     box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
 }
 

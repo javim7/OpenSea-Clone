@@ -11,9 +11,15 @@ function Nav() {
         <div className="NavBarLeft">
           <img src={OpenSeaLogo} className="openseaLogo" alt="openseaLogo" />
         </div>
-        <div className="NavInput">
-          <Search className="searchIcon" />
-          <input className="searchInput" type="text" placeholder="Search items, collections, and accounts" />
+        <div className="NavInputCont">
+          <div className="NavInputCont2">
+            <div className="NavInputCont3">
+              <div className="searchIconCont">
+                <Search className="searchIcon" />
+              </div>
+              <input className="searchInput" type="text" placeholder="Search items, collections, and accounts" />
+            </div>
+          </div>
         </div>
         <div className="NavBarRight">
           <ul className="RightLeft">

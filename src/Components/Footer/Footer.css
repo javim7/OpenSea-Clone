@@ -1,0 +1,426 @@
+.FooterContainer{
+  position: absolute;
+  left: 0;
+  top: 6498px;
+  color: rgb(255, 255, 255);
+  height: auto;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(24, 104, 183);
+}
+
+@media (min-width: 815px) {
+  .FooterCont2 {
+  width: 82.5%;
+}}
+
+.Footer1Cont{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+}
+
+@media (min-width: 1200px) {.Footer11Cont {
+  width: 50%;
+  padding-top: 40px;
+  align-items: flex-start;
+  text-align: left;
+}}
+
+@media (min-width: 1200px) {
+  .Footer11Cont {
+  padding-right: 64px;
+  }
+}
+
+.Footer11Cont{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  -webkit-box-align: center;
+}
+
+.loopTxt{
+  color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.loopDesc{
+  font-size: 16px;
+    color: rgb(251, 253, 255);
+}
+
+.signUpCont{
+  width: 100%;
+    margin-top: 16px;
+    color: rgb(53, 56, 64);
+}
+
+.signUpCont2{
+  width: 100%;
+  display: flex;
+}
+
+.signUpBtn{
+  white-space: nowrap;
+  display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+  margin: 0px 8px 8px;
+    height: 50px;
+    width: 162px;
+    appearance: button;
+      cursor: pointer;
+      font-size: 16px;
+        font-weight: 600;
+}
+
+.signUpBtn:hover {
+  background-color: rgb(35, 137, 239);
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.signInputCont{
+  width: 100%;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signInputCont2{
+  display: flex;
+  flex-direction: column;
+}
+
+.labelCont{
+  display: flex;
+  flex-direction: column;
+}
+
+.labelInput{
+  color: rgb(53, 56, 64);
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    width: 1px;
+    font-weight: 600;
+      font-size: 16px;
+}
+
+.signInpCont{
+  min-width: 50px;
+  width: 100%;
+  cursor: text;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(229, 232, 235);
+    padding: 12px;
+}
+
+.signInp{
+  font-size: inherit;
+    line-height: inherit;
+    min-height: inherit;
+  cursor: text;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  margin: 0px;
+}
+
+.Footer12Cont{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+}
+
+@media (min-width: 1200px) {
+  .Footer12Cont {
+    width: 50%;
+    padding-top: 40px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Footer12Cont {
+    padding-left: 64px;
+  }
+}
+
+.joinTxt{
+  color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.logosContF{
+  display: flex;
+  flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.logosLinkF{
+  margin-right: 12px;
+    width: 54px;
+    height: 54px;
+    margin-top: 8px;
+  display: inline-flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    background-color: rgb(32, 129, 226);
+    border: 1px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.logosLinkF:hover {
+  background-color: rgb(42, 145, 248);
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.logosContF2{
+  display: flex;
+}
+
+.logosSvgF{
+  height: 20px;
+    width: 30px;
+    fill: rgb(255, 255, 255);
+}
+
+.mailIcon{
+  font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+      color: rgb(255, 255, 255);
+      font-feature-settings: "liga" !important;
+      font-size: 30px !important;
+}
+
+.Footer2Cont{
+  display: flex;
+  flex-wrap: wrap;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+}
+
+@media (min-width: 1024px) {
+  .opLogoCont {
+    width: 25%;
+    padding-top: 40px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.opLogoCont{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+}
+
+.opLogo{
+  height: 44px;
+    width: 44px;
+  -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.opLogoImg{
+  height: 100%;
+    object-fit: contain;
+    transition: opacity 400ms ease 0s;
+    width: 100%;
+}
+
+.opLink{
+  color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.opDesc{
+  font-size: 16px;
+    color: rgb(251, 253, 255);
+}
+
+@media (min-width: 1024px) {.optionsCont {
+  width: 75%;
+  padding-top: 40px;
+  align-items: flex-start;
+  padding-left: 72px;
+}}
+
+.optionsCont{
+  display: flex;
+  /* width: 100%; */
+    height: fit-content;
+    /* align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 0px; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#MarketCont{
+  margin-bottom: 16px;
+}
+
+@media (min-width: 815px) {.ColumnsContF {
+  width: 20%;
+  height: 100%;
+  padding-top: 0px;
+  align-items: flex-start;
+}}
+
+.ColumnsContF{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+}
+
+.columnTitle{
+  font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.columList{
+  padding-left: 0px;
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+@media (min-width: 815px) {.columListEl {
+  text-align: initial;
+}}
+
+.columListEl{
+  font-size: 14px;
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+.columListEl:hover{
+  font-weight: 500;
+}
+
+.elementLinkF{
+  color: rgb(251, 253, 255);
+  text-decoration: none;
+}
+
+.Footer3Cont{
+  display: flex;
+  -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 815px) {.Foot31Cont {
+  width: 75%;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  text-align: initial;
+}}
+
+.Foot31Cont{
+  display: flex;
+}
+
+.year{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (min-width: 815px) {.Foot32Cont {
+  width: 25%;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+}}
+
+.Foot32Cont{
+ display: flex;
+ text-align: initial; 
+}
+
+.privacy{
+  color: rgb(251, 253, 255);
+    margin-top: 0px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.service{
+  margin-left: 16px;
+  color: rgb(251, 253, 255);
+    margin-top: 0px;
+    font-size: 12px;
+    text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.SponsorsContainer{
+  position: absolute;
+  left: 0;
+  top: 6398px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(32, 129, 226);
+}
+
+@media (min-width: 1200px) {
+  .SponsorsContainer {
+  height: 100px;
+}}
+
+@media (min-width: 1200px) {
+  .SponsorsCont2 {
+  max-width: 1280px;
+}}
+
+.SponsorsCont2{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sponsorsLink {
+  color: rgb(32, 129, 226);
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  .sponsorsSVG {
+  width: 126px;
+}}
+
+.sponsorsSVG{
+  height: 35px;
+  margin: 10px;
+  width: 126px;
+  fill: rgba(251, 253, 255, 0.75);
+}
+
+.sponsorsSVG:hover{
+  fill: white;
+}

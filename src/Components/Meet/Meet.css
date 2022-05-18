@@ -1,0 +1,129 @@
+.MeetContainer{
+  position: absolute;
+  left: 0;
+  top: 5296px;
+  padding-top: 40px;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 815px) {
+  .MeetCont2 {
+    padding-bottom: 0px;
+  }
+}
+
+.MeetCont2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+  background-color: rgb(243, 251, 254);
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.MeetCont3{
+  max-width: min(1280px, 100% - 80px);
+  width: 100%;
+}
+
+.MeetTitle{
+  font-size: 40px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: rgb(4, 17, 29);
+}
+
+.MeetDescription{
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(112, 122, 131);
+}
+
+.meetBtn{
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: rgb(32, 129, 226);
+  border: 1px solid rgb(32, 129, 226);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.meetBtn:hover {
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+  background-color: rgb(29, 108, 187);
+}
+
+@media (min-width: 815px) {.meetVidCont {
+  padding: 40px 100px 80px;
+}}
+
+
+.vidTxtS{
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(112, 122, 131);
+  text-align: center;
+}
+
+.meetVidCont2{
+  height: 0px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.btnYT{
+  cursor: pointer;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    margin-left: -34px;
+    margin-top: -24px;
+    transition: opacity .25s cubic-bezier(0, 0, 0.2, 1);
+    border: none;
+    outline: none;
+}
+
+.YTsvg{
+  height: 68px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 68px;
+    pointer-events: none;
+}
+
+.ytp-large-play-button-bg{
+  transition: fill .1s cubic-bezier(0.4, 0, 1, 1),
+      fill-opacity .1s cubic-bezier(0.4, 0, 1, 1);
+    fill: #212121;
+    fill-opacity: .8;
+}
+
+.ytp-large-play-button-bg:hover{
+  fill: rgb(255, 0, 0);
+}
+
+.video:hover + .ytp-large-play-button-bg{
+  fill: rgb(255, 0, 0);
+}

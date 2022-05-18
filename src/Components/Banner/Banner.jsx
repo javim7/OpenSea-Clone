@@ -1,15 +1,15 @@
 import './Banner.css'
 import { PlayCircleFilled } from '@mui/icons-material'
-// import BannerImg from './bannerBackground.jpeg'
-// import featImg from './featuredImg.jpeg'
-import Beanz from './beanz.png'
-import BeanzAvatar from './beanzAvatar.png'
+import BannerImg from './bannerBackground.jpeg'
+import featImg from './featuredImg.jpeg'
+// import Beanz from './beanz.png'
+// import BeanzAvatar from './beanzAvatar.png'
 
 function Banner() {
   return (
     <div className="BannerContainer">
       <div className="BannerBackground">
-        <div className="BannerImg" style={{ backgroundImage: `url(${Beanz})` }}>
+        <div className="BannerImg" style={{ backgroundImage: `url(${BannerImg})` }}>
           <div className="BannerFade" />
         </div>
       </div>
@@ -36,18 +36,18 @@ function Banner() {
         <div className="BannerImg2">
           <article className="articuloCont">
             <a className="imgLink" href="https://opensea.io/collection/otherdeed">
-              <img alt="featured" className="featImg" src={Beanz} />
+              <img alt="featured" className="featImg" src={BannerImg} />
               <footer className="footer">
                 <div className="featuredPic">
-                  <img alt="featured" className="featImg2" src={BeanzAvatar} />
+                  <img alt="featured" className="featImg2" src={featImg} />
                 </div>
                 <div className="featTextCont">
                   <span className="span1Cont">
-                    <span className="span1">BEANZ Official</span>
+                    <span className="span1">Otherdeed for Otherside</span>
                   </span>
                   <span className="span2Cont">
                     <span style={{ fontWeight: '400', color: '#04111d', fontSize: '14px' }}>by</span>
-                    <span style={{ fontWeight: '500', marginLeft: '4px', color: '#04111d' }}>Azuki</span>
+                    <span style={{ fontWeight: '500', marginLeft: '4px', color: '#04111d' }}>OthersideMeta</span>
                   </span>
                 </div>
               </footer>
