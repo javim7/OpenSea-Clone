@@ -194,6 +194,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: all 1s ease;
 }
 
 .fullCardCont{

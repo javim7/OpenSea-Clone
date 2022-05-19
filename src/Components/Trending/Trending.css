@@ -231,11 +231,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: all 1s ease;
 }
 
 .listBtns{
   position: absolute;
-  bottom: -32px;
+  left: 33%;
+  bottom: -5px;
   display: block;
   width: 100%;
   padding: 0px;
@@ -438,4 +440,44 @@
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
+}
+
+.listElCarr{
+  position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    padding: 0px;
+    cursor: pointer;
+  list-style-type: none;
+}
+
+.ElCarrBtn {
+  font-size: 0px;
+  line-height: 0;
+  display: block;
+  width: 2px;
+  height: 2px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0px;
+  border-radius: 50%;
+  outline: none;
+  appearance: button;
+  font: inherit;
+  margin: 0px;
+}
+
+.active {
+  background: rgb(32, 129, 226);
+}
+
+.inactive {
+  background: rgb(80, 160, 240, 0.5);
+}
+
+.ElCarrBtn:hover {
+  background: rgb(32, 129, 226);
 }

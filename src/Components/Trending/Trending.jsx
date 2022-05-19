@@ -1,5 +1,6 @@
 /* eslint-disable object-curly-newline */
 import './Trending.css'
+import { useState } from 'react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
@@ -20,8 +21,8 @@ import mont from './mont.jpg'
 import monta from './monta.gif'
 import boys from './boys.png'
 import boysa from './boysa.gif'
-import punk from './punk.png'
-import punka from './punka.jpg'
+// import punk from './punk.png'
+// import punka from './punka.jpg'
 
 function Trending() {
   const cards = [
@@ -36,8 +37,48 @@ function Trending() {
     { title: 'Aetherian Deed', by: '223FCC', description: 'Explore the Aetherian Deed collection', src: galactic, logo: galacticA },
     { title: 'Duck Punkz Universe', by: 'DuckPunkzUniversola...', description: 'An exclusive collection of 4500 uniquely generated pixel Duck Punkz, waddling their way through the ...', src: mont, logo: monta },
     { title: 'BBRC - IVY BOYS', by: 'BBRC_Studios', description: 'IVY BOYS by Aaron Chang is the genesis project of BBRC Studios and the first of many creator collabora...', src: boys, logo: boysa },
-    { title: 'SolPunks', by: 'SolPunks_Official', description: 'Homage to the iconic punks. The first NFT collection to finish minting on Solana https://twitter.com...', src: punk, logo: punka },
   ]
+
+  const [contadorPx, setContadorPx] = useState(-1242)
+
+  const [estilo, setEstilo] = useState({
+    width: '4554px',
+    opacity: '1',
+    transform: 'translate3d(-1242px, 0px, 0px)',
+    position: 'relative',
+    top: '0px',
+    left: '0px',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  })
+
+  const handleClick = (direction) => {
+    if (direction === 'right') {
+      setContadorPx((prev) => prev - 414)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+      if (contadorPx === -3312) {
+        const tem2 = { ...estilo }
+        setContadorPx(0)
+        tem2.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+        setEstilo(temp)
+      }
+    }
+    if (direction === 'left') {
+      setContadorPx((prev) => prev + 414)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+      if (contadorPx === 0) {
+        const tem3 = { ...estilo }
+        setContadorPx(-3312)
+        tem3.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+        setEstilo(temp)
+      }
+    }
+  }
 
   return (
     <section className="TrendingContainer">
@@ -53,13 +94,13 @@ function Trending() {
       <div className="carCont">
         <div className="carCont2">
           <div className="carCont3">
-            <button type="button" className="lSlide" aria-label="prev slide">
+            <button type="button" className="lSlide" aria-label="prev slide" onClick={() => handleClick('left')}>
               <div aria-hidden="true" className="lIconCont">
                 <ChevronLeftIcon className="lIcon" />
               </div>
             </button>
             <div className="car">
-              <div className="carSty">
+              <div className="carSty" style={estilo}>
                 {
                   cards.map((card) => (
                     <div className="fullCCont">
@@ -100,13 +141,48 @@ function Trending() {
                 }
               </div>
             </div>
-            <button type="button" className="rSlide" aria-label="next slide">
+            <button type="button" className="rSlide" aria-label="next slide" onClick={() => handleClick('right')}>
               <div aria-hidden="true" className="rIconCont">
                 <ChevronRightIcon className="rIcon" />
               </div>
             </button>
             <ul className="listBtns">
-            
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn active">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
+              <li className="listElCarr">
+                <button type="button" className="ElCarrBtn">1</button>
+              </li>
             </ul>
           </div>
         </div>

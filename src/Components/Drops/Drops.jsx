@@ -1,4 +1,5 @@
 import './Drops.css'
+import { useState, useEffect } from 'react'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
 import Iceland from './iceland.jpg'
@@ -12,27 +13,94 @@ import Vogue from './vogue.jpg'
 function Drops() {
   const promoCards = [
     {
-      title: '`Everybody` NFT Collection', id: 'vogue', description: 'A collection by Vogue Singapore, in collaboration The MetaArt Club', src: Vogue,
+      index: 0, title: '`Everybody` NFT Collection', id: 'vogue', description: 'A collection by Vogue Singapore, in collaboration The MetaArt Club', src: Vogue,
     },
     {
-      title: 'SuperGrannies of Korogocho', id: 'grannies', description: 'The lastest collection from ART3', src: Grannies,
+      index: 1, title: 'SuperGrannies of Korogocho', id: 'grannies', description: 'The lastest collection from ART3', src: Grannies,
     },
     {
-      title: 'NFTSTAR Fan Pass: Son Heung-Min', id: 'star', description: 'IRL and web3 empowerment for fans & holders', src: Star,
+      index: 2, title: 'NFTSTAR Fan Pass: Son Heung-Min', id: 'star', description: 'IRL and web3 empowerment for fans & holders', src: Star,
     },
     {
-      title: 'Signs of the Times', id: 'sign', description: '', src: Sign,
+      index: 3, title: 'Signs of the Times', id: 'sign', description: '', src: Sign,
     },
     {
-      title: 'Surge Passport NFT', id: 'surge', description: 'Onborading the next gen Web3: 5,000 utility tokens', src: Surge,
+      index: 4, title: 'Surge Passport NFT', id: 'surge', description: 'Onborading the next gen Web3: 5,000 utility tokens', src: Surge,
     },
     {
-      title: 'wackies', id: 'wackie', description: '', src: Wackie,
+      index: 5, title: 'wackies', id: 'wackie', description: '', src: Wackie,
     },
     {
-      title: 'Powerful Iceland', id: 'iceland', description: '', src: Iceland,
+      index: 6, title: 'Powerful Iceland', id: 'iceland', description: '', src: Iceland,
     },
   ]
+
+  const [circulitos, setCirculitos] = useState({
+    activeObject: null,
+    objects: [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }],
+  })
+
+  useEffect(() => {
+    setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+  }, [])
+
+  const [contadorPx, setContadorPx] = useState(-1242)
+
+  const [estilo, setEstilo] = useState({
+    width: '4554px',
+    opacity: '1',
+    transform: 'translate3d(-1242px, 0px, 0px)',
+    position: 'relative',
+    top: '0px',
+    left: '0px',
+    display: 'block',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  })
+
+  const handleClick = (direction) => {
+    if (direction === 'right') {
+      setContadorPx((prev) => prev - 414)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+      if (contadorPx === -1656) {
+        const tem2 = { ...estilo }
+        setContadorPx(0)
+        tem2.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+        setEstilo(temp)
+      }
+    }
+    if (direction === 'left') {
+      setContadorPx((prev) => prev + 414)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+      if (contadorPx === 0) {
+        const tem3 = { ...estilo }
+        setContadorPx(-1656)
+        tem3.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+        setEstilo(temp)
+      }
+    }
+  }
+
+  function toggleActive() {
+    // setCirculitos({ ...circulitos, activeObject: circulitos.objects[index] })
+    if (contadorPx === -1242) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+    }
+    if (contadorPx === -1656) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+    }
+  }
+
+  function toggleActiveStyle(index) {
+    if (circulitos.objects[index] === circulitos.activeObject) {
+      return 'ElCarrBtn active'
+    }
+    return 'ElCarrBtn inactive'
+  }
 
   return (
     <div className="DropsContainer">
@@ -41,13 +109,13 @@ function Drops() {
         <div className="carouselCont">
           <div className="carouselCont2">
             <div className="carouselCont3">
-              <button type="button" className="leftSlide" aria-label="prev slide">
+              <button type="button" className="leftSlide" aria-label="prev slide" onClick={() => handleClick('left')}>
                 <div aria-hidden="true" className="leftIconCont">
                   <ChevronLeftIcon className="leftIcon" />
                 </div>
               </button>
               <div className="carousel">
-                <div className="carouselSty">
+                <div className="carouselSty" style={estilo}>
                   {
                     promoCards.map((card) => (
                       <div className="fullCardCont">
@@ -81,12 +149,21 @@ function Drops() {
                   }
                 </div>
               </div>
-              <button type="button" className="rightSlide" aria-label="next slide">
+              <button type="button" className="rightSlide" aria-label="next slide" onClick={() => handleClick('right')}>
                 <div aria-hidden="true" className="rightIconCont">
                   <ChevronRightIcon className="rightIcon" />
                 </div>
               </button>
-              <ul className="listaBtns" />
+              <ul className="listaBtns">
+                {
+                  circulitos.objects.map((elements, index) => (
+                    // eslint-disable-next-line react/no-array-index-key
+                    <li className="listElCarr" key={index}>
+                      <button type="button" className={toggleActiveStyle(index)} onClick={() => toggleActive()}>1</button>
+                    </li>
+                  ))
+                }
+              </ul>
             </div>
           </div>
         </div>
