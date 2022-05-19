@@ -49,7 +49,7 @@ function Drops() {
   const [estilo, setEstilo] = useState({
     width: '4554px',
     opacity: '1',
-    transform: 'translate3d(-1242px, 0px, 0px)',
+    transform: 'translate3d(0px, 0px, 0px)',
     position: 'relative',
     top: '0px',
     left: '0px',
@@ -59,6 +59,18 @@ function Drops() {
   })
 
   const handleClick = (direction) => {
+    if (contadorPx === 0) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+    }
+    if (contadorPx === -828) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[1] })
+    }
+    if (contadorPx === -1242) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[2] })
+    }
+    if (contadorPx === -1656) {
+      setCirculitos({ ...circulitos, activeObject: circulitos.objects[3] })
+    }
     if (direction === 'right') {
       setContadorPx((prev) => prev - 414)
       const temp = { ...estilo }
@@ -85,13 +97,31 @@ function Drops() {
     }
   }
 
-  function toggleActive() {
-    // setCirculitos({ ...circulitos, activeObject: circulitos.objects[index] })
-    if (contadorPx === -1242) {
-      setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+  function toggleActive(index) {
+    setCirculitos({ ...circulitos, activeObject: circulitos.objects[index] })
+    if (circulitos.objects[index].id === 0) {
+      setContadorPx(0)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
     }
-    if (contadorPx === -1656) {
-      setCirculitos({ ...circulitos, activeObject: circulitos.objects[0] })
+    if (circulitos.objects[index].id === 1) {
+      setContadorPx(-828)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+    }
+    if (circulitos.objects[index].id === 2) {
+      setContadorPx(-1242)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
+    }
+    if (circulitos.objects[index].id === 3) {
+      setContadorPx(-1656)
+      const temp = { ...estilo }
+      temp.transform = `translate3d(${contadorPx}px, 0px, 0px)`
+      setEstilo(temp)
     }
   }
 
@@ -159,7 +189,7 @@ function Drops() {
                   circulitos.objects.map((elements, index) => (
                     // eslint-disable-next-line react/no-array-index-key
                     <li className="listElCarr" key={index}>
-                      <button type="button" className={toggleActiveStyle(index)} onClick={() => toggleActive()}>1</button>
+                      <button type="button" className={toggleActiveStyle(index)} onClick={() => toggleActive(index)}>1</button>
                     </li>
                   ))
                 }
